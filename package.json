@@ -8,6 +8,9 @@
   },
   "author": "Sanskriti Negi + Anderson Foothill Library",
   "license": "ISC",
+  "engines": {
+    "node": "16.6.1"
+  },
   "dependencies": {
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
