@@ -1,0 +1,63 @@
+<%- include('components/navbar') %>
+
+<h3 class = "page-title">Suggest A Book</h3>
+<section class = "center-float">
+<div class = "form-container">
+    <form action = "/suggest" method = "post" class = "wide-inputs">
+
+        <input placeholder="Title" type = "text" name = "title" class = "long-input">
+        <input placeholder="Author" type = "text" name = "author" class = "long-input">
+        <input placeholder="Image Url" type = "text" name = "imageUrl" class = "long-input">
+        <input placeholder="Library Url to Book" type = "text" name = "libraryUrl" class = "long-input">
+        <h4>Select Book Categories</h4>
+        <div class = "buttons">
+            <button type = "button" onclick="addToList(this)">Fantasy</button>
+            <button type = "button" onclick="addToList(this)">Fiction</button>
+            <button type = "button" onclick="addToList(this)">SciFi</button>
+            <button type = "button" onclick="addToList(this)">Romance</button>
+            <button type = "button" onclick="addToList(this)">Urban Fantasy</button>
+            <button type = "button" onclick="addToList(this)">Historial Fiction</button>
+            <button type = "button" onclick="addToList(this)">Memoir/Autobiography</button>
+            <button type = "button" onclick="addToList(this)">NonFiction</button>
+            <button type = "button" onclick="addToList(this)">Mythology</button>
+            <button type = "button" onclick="addToList(this)">Dystopian</button>
+            <button type = "button" onclick="addToList(this)">Mystery</button>
+            <button type = "button" onclick="addToList(this)">Verse</button>
+            <button type = "button" onclick="addToList(this)">Prose</button>
+            <button type = "button" onclick="addToList(this)">Graphic Novel</button>
+            <button type = "button" onclick="addToList(this)">African American or Black</button>
+            <button type = "button" onclick="addToList(this)">AAPI</button>
+            <button type = "button" onclick="addToList(this)">Latino</button>
+            <button type = "button" onclick="addToList(this)">Arab or Arab American</button>
+            <button type = "button" onclick="addToList(this)">Native American</button>
+            <button type = "button" onclick="addToList(this)">LGBTQIA+</button>
+            <button type = "button" onclick="addToList(this)">WLW or NBLW</button>
+            <button type = "button" onclick="addToList(this)">MLM or NBLM</button>
+            <button type = "button" onclick="addToList(this)">Trans</button>
+            <button type = "button" onclick="addToList(this)">Nonbinary/Genderfluid</button>
+            <button type = "button" onclick="addToList(this)">Aro/Ace</button>
+            <button type = "button" onclick="addToList(this)">Closet-safe</button>
+            <button type = "button" onclick="addToList(this)">Migrant Stories</button>
+            <button type = "button" onclick="addToList(this)">Own Voices</button>
+            <button type = "button" onclick="addToList(this)">Jewish</button>
+            <button type = "button" onclick="addToList(this)">Muslim</button>
+            <button type = "button" onclick="addToList(this)">Mental Disability</button>
+            <button type = "button" onclick="addToList(this)">Mental Health</button>
+            <button type = "button" onclick="addToList(this)">Physical Disability</button>
+            <button type = "button" onclick="addToList(this)">Autism/ADHD</button>
+            <button type = "button" onclick="addToList(this)">Depression</button>
+            <button type = "button" onclick="addToList(this)">PTSD</button>
+            <button type = "button" onclick="addToList(this)">OCD</button>
+            <button type = "button" onclick="addToList(this)">Deaf/Mute/Blind</button>
+            <button type = "button" onclick="addToList(this)">Middle Grade</button>
+            <button type = "button" onclick="addToList(this)">New Adult/ Adult Book with Teen Interest</button>
+        </div>
+        <input type = "hidden" value = "" id = "categoryList" name = "categories">
+
+        <textarea rows="8" cols = "50" name = "summary" class = "long-textarea" placeholder="Publisher Summary" ></textarea>
+        <button type = "submit">Suggest This Book</button>
+    </form>
+</div>
+</section>
+<script src="SCRIPTS/createTagList.js" async defer></script>
+<%- include('components/footer') %>

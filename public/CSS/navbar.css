@@ -1,0 +1,35 @@
+footer{
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    margin-top: 100px;
+}
+
+nav{
+    margin: 0;
+    background-color: #65D1BE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul > li{
+    padding: 10px;
+}
+
+nav > ul > li > a{
+    font-weight: bold;
+    color: #fff;
+}
+

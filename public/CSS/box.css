@@ -1,0 +1,44 @@
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 80%;
+    height: auto;
+    background-color: #4D22FA;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.box > div{
+    padding: 10px;
+}
+
+.box > div > div > p{
+    padding: 5px 0;
+    width: auto;
+    word-break: break-all;
+}
+
+.box > .top{
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-gap: 15px;
+}
+.box > .bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.box > .bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box > .top > .right > img{
+    width: 100px;
+}
