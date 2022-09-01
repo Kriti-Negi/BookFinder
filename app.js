@@ -9,8 +9,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public/'));
 
-//mongodb+srv://KritN:stoneSmith@cluster0.bq442zz.mongodb.net/
-
 mongoose.connect('mongodb+srv://KritN:stoneSmith@cluster0.bq442zz.mongodb.net/TeenBooks', {useNewUrlParser: true});
 
 const bookSchema = new mongoose.Schema({
