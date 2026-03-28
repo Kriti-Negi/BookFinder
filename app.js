@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public/'));
 
-mongoose.connect('mongodb+srv://KritN:stoneSmith@cluster0.bq442zz.mongodb.net/TeenBooks', {useNewUrlParser: true});
+mongoose.connect('', {useNewUrlParser: true});
 
 const bookSchema = new mongoose.Schema({
     title: String,
